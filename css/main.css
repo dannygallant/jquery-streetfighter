@@ -23,10 +23,9 @@ body {
 	height: 494px;
 }
 
-/* Don't think this is required */
-/*.ryu-still {
+.ryu-still {
 	display: block;
-}*/
+}
 
 
 .ryu-ready, .ryu-throwing {
