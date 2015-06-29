@@ -12,8 +12,36 @@ body {
 	z-index: 1;
 }
 
+.text {
+	width: 500px;
+	height: 494px;
+	position: absolute;
+    right: 100px;
+    padding-top: 75px;
+}
+
+.text p {
+	display: block;
+	font-size: 1.75rem;
+	font-style: italic;
+	font-family: fantasy, comical, Georgia, Serif;
+}
+
+.instructions .left {
+	float: left;
+	width: 300px;
+	height: 200px;
+}
+
+.instructions .right {
+	float: right;
+	width: 300px;
+	height: 220px;
+}
+
 .ryu {
-	/*float: left;    Mentioned in instructions, but not in the code solution   */
+	float: left;    
+	/*Mentioned in instructions, but not in the code solution   */
 	width: 659px;
 	height: 494px;
 }
@@ -64,3 +92,8 @@ body {
 	z-index: 10;
 }
 
+
+/*.main p {
+	float: right;
+}
+*/
