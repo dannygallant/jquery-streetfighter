@@ -83,20 +83,3 @@ function runIntro() {
     })
   })
 }
-
-
-
-// function runIntro() {
-//   $('.sf-logo').fadeIn(2500, function() {
-//     $(this).fadeOut(1000, function() {
-//       $('.tech-logos').fadeIn(2500, function() {
-//         $(this).fadeOut(1500, function() {
-      	
-//           $('.throw').fadeIn(1000);
-//           $('.look-cool').fadeIn(1000);
-
-//           });
-//         })
-//       })
-//     })
-//   }
