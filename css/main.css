@@ -27,16 +27,48 @@ body {
 	font-family: fantasy, comical, Georgia, Serif;
 }
 
-.instructions .left {
+.presented-by p {
+	display: block;
+	font-size: 1rem;
+	font-style: italic;
+	font-family: fantasy, comical, Georgia, Serif;
+	color: white;
+	text-align: right;
+	padding-right: 30px;
+}
+
+.sf-logo {
+	background-image: url('../images/SF-logo.gif');
+	width: 380px;
+	height: 180px;
+	display: none;
+}
+
+.presented-by {
+	display: none;
+	min-width: 1200px;
+
+}
+
+.tech-logos {
+	background-image: url('../images/html-css-jquery.png');
+	width: 300px;
+	height: 348px;
+	display: none;
+}
+
+.text .throw {
 	float: left;
 	width: 300px;
 	height: 200px;
+	display: none;
 }
 
-.instructions .right {
+.text .look-cool {
 	float: right;
 	width: 300px;
 	height: 220px;
+	display: none;
 }
 
 .ryu {
@@ -49,16 +81,13 @@ body {
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	width: 659px;
 	height: 494px;
+	display: none;
 }
 
 .ryu-still {
 	display: block;
 }
 
-
-.ryu-ready, .ryu-throwing, .ryu-cool {
-	display: none;
-}
 
 .ryu-ready {
 	background-image: url('../images/ryu-ready-position.gif');

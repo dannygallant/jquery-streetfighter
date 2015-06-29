@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	runIntro();
+	play();
+});
+
+function play() {
 		$('.ryu').mouseenter(function(){
 		$('.ryu-still').hide();
 		$('.ryu-ready').show();
@@ -22,25 +27,23 @@ $(document).ready(function(){
 	.mouseup(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
-		// hide hadouken & stop sound
-		// hide ryu-throwing and show ryu-ready
 	})
+};
 
-});
-
-
-$(document).keydown(function(e) {
+	$(document).keydown(function(e) {
     if (e.keyCode == 88) {
 	    playCool();	
 	    $('.ryu-ready').hide();
 	    $('.ryu-still').hide();
 	    $('.ryu-cool').show();
     }   
-  }).keyup(function(e) {
+  })
+	.keyup(function(e) {
+		if (e.keyCode == 88) {
   		stopCool();
 	    $('.ryu-cool').hide();
-	    $('.ryu-still').show();
-    // }
+	    $('.ryu-ready').show();
+	}
   });
 
 
@@ -64,4 +67,21 @@ function playCool() {
 function stopCool() {
 	$('#so-cool')[0].pause();
 	$('#so-cool')[0].load();
+}
+
+function runIntro() {
+  $('.sf-logo').fadeIn(2500, function() {
+    $(this).fadeOut(1000, function() {
+      $('.tech-logos').fadeIn(2500, function() {
+        $(this).fadeOut(1500, function() {
+      	  $('.presented-by').fadeIn(2500, function() {
+        	// $(this).fadeOut(1000, function() {
+         	  $('.throw').fadeIn(1000);
+              	$('.look-cool').fadeIn(1000);
+            // });
+          })
+        })
+      })
+    })
+  })
 }
